@@ -27,14 +27,17 @@ fi
 
 echo $salida >> salida.txt
 
+# cargo fichero con variables de entorno
+source .env
+
 #automatiza la apertura de varias urls
 urls=(
-	"https://www.youtube.com/watch?v=YbVLeegKIOs&list=PLG1qdjD__qH4dyXq4sM03Rf0RFhB_4tbm&index=38"
-    "https://www.idealista.com/venta-viviendas/arroyomolinos-madrid/con-precio-hasta_240000/?ordenado-por=precios-asc"
-    "https://www.idealista.com/venta-viviendas/moraleja-de-enmedio-madrid/con-precio-hasta_240000/?ordenado-por=precios-asc"
-    "https://www.idealista.com/venta-viviendas/mostoles/sur/con-precio-hasta_220000,garaje/"
-	"https://www.idealista.com/geo/venta-viviendas/parque-coimbra/con-precio-hasta_240000,garaje/"
-	"https://www.idealista.com/venta-viviendas/fuenlabrada/loranca/con-precio-hasta_240000,garaje/"
+	$URL_1
+	$URL_2
+	$URL_3
+	$URL_4
+	$URL_5
+	$URL_6
 )
 
 
