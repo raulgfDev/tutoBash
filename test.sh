@@ -28,7 +28,7 @@ fi
 echo $salida >> salida.txt
 
 # cargo fichero con variables de entorno
-source .env
+source .env.example
 
 #automatiza la apertura de varias urls
 urls=(
